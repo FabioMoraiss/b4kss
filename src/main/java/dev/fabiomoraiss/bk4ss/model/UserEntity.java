@@ -1,13 +1,11 @@
-package dev.fabiomoraiss.bk4ss.rest.entity;
+package dev.fabiomoraiss.bk4ss.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CascadeType;
 import org.springframework.data.annotation.Id;
 
 @Entity

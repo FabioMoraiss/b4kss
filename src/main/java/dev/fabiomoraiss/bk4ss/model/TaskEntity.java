@@ -1,4 +1,4 @@
-package dev.fabiomoraiss.bk4ss.rest.entity;
+package dev.fabiomoraiss.bk4ss.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,15 +9,16 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ListEntity {
+public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "id_kanban", nullable = false)
-    private KanbanEntity kanban;
+    @JoinColumn(name = "id_lista", nullable = false)
+    private ListEntity lista;
 
     private String titulo;
     private String cor;
+    private String descricao;
 }
